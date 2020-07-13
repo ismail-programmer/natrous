@@ -8,7 +8,7 @@
     "compiling:sass": "node-sass sass/main.scss css/style.comp.css",
     "concat:css": "concat -o css/style.concat.css css/icons.css css/style.comp.css"
   },
-  "author": "Rubab",
+  "author": "Ismail",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.8.4",
