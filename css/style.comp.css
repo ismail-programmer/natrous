@@ -16,9 +16,6 @@ html {
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (max-width: 25em) {
-    html {
-      font-size: 25%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -29,10 +26,6 @@ body {
   @media (max-width: 56.25em) {
     body {
       padding: 0; } }
-
-::selection {
-  background-color: #55c57a;
-  color: white; }
 
 @keyframes moveInleft {
   0% {
@@ -103,20 +96,7 @@ big-desktop
   background-size: cover;
   background-position: top;
   /*clip-path: polygon (x y, x y, x y); for triangle polygon(50% 0, 100% 100%, 0 100%)*/
-  position: relative;
-  /*  @media (max-width: 31.25em){
-          height: 85vh;
-        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        padding: 0;
-      }   
-
-      @media (max-width: 25em){
-        height: 65vh;
-      clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
-      padding: 0;
-    }   */ }
+  position: relative; }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
@@ -194,14 +174,6 @@ body {
   @media (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2rem; } }
-  @media (max-width: 31.25em) {
-    .heading-secondary {
-      font-size: 1.5rem;
-      margin-top: 4rem; } }
-  @media (max-width: 25em) {
-    .heading-secondary {
-      font-size: 1.45rem;
-      margin-top: 4rem; } }
   .heading-secondary:hover {
     transform: skewY(4deg) skewX(10deg);
     text-shadow: 0.5rem 2rem 2rem rgba(0, 0, 0, 0.2); }
@@ -214,14 +186,6 @@ body {
     .heading-tertiary {
       font-size: 1.10rem;
       font-weight: 900; } }
-  @media (max-width: 31.25em) {
-    .heading-tertiary {
-      display: block;
-      font-weight: 400; } }
-  @media (max-width: 25em) {
-    .heading-tertiary {
-      font-size: 1.45rem;
-      font-weight: 400; } }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -271,6 +235,7 @@ body {
     box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.4); }
   .footer__copyright {
+    
     border-top: 1px solid #999;
     padding-top: 2rem;
     width: 75%;
@@ -302,12 +267,6 @@ body {
     .navigation__button {
       top: 4rem;
       right: 4rem; } }
-  @media (max-width: 25em) {
-    .navigation__button {
-      top: 7rem;
-      right: 4rem;
-      height: 7.5rem;
-      width: 7.5rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -326,10 +285,6 @@ body {
   @media (max-width: 37.5em) {
     .navigation__background {
       top: 4.5rem;
-      right: 4.5rem; } }
-  @media (max-width: 25em) {
-    .navigation__background {
-      top: 7.5rem;
       right: 4.5rem; } }
 
 .navigation__nav {
@@ -471,14 +426,6 @@ body {
   border: none;
   cursor: pointer;
   outline: none; }
-  @media (max-width: 31.25em) {
-    .btn, .btn:link, .btn:visited {
-      font-size: 1.2rem;
-      padding: 1rem 3rem; } }
-  @media (max-width: 25em) {
-    .btn, .btn:link, .btn:visited {
-      font-size: 1.2rem;
-      padding: 2.5rem 3.5rem; } }
 
 .btn:hover {
   transform: translateY(-5px);
@@ -588,7 +535,7 @@ body {
     position: absolute;
     z-index: 10;
     outline-offset: 1.5rem; }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .composition__photo {
         float: left;
         position: relative;
@@ -743,7 +690,7 @@ body {
     margin-bottom: 8rem; }
   .card .Discover {
     margin-top: 10rem !important; }
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  @media (max-width: 56.25em) {
     .card {
       height: auto;
       border-radius: 3px;
@@ -797,16 +744,11 @@ body {
       padding-right: 3.5rem !important;
       transform: skewX(0);
       font-size: 1rem; } }
-  @media (max-width: 31.25em) {
-    .story {
-      width: 100%;
-      font-size: 1rem; } }
   .story__shape {
     width: 15rem;
     height: 15rem;
     background-color: red;
     float: left;
-    margin-right: 1rem;
     transform: translateX(-3rem) skewX(12deg);
     position: relative;
     border-radius: 50%;
@@ -821,10 +763,6 @@ body {
     @media (max-width: 37.5em) {
       .story__shape {
         transform: translateX(-3rem) skewX(0); } }
-    @media (max-width: 31.25em) {
-      .story__shape {
-        transform: translateX(0) skewX(0);
-        display: block; } }
   .story__img {
     height: 100%;
     transform: translate(-4rem) scale(1.4);
@@ -948,9 +886,6 @@ body {
   cursor: pointer;
   position: relative;
   padding-left: 4rem; }
-  @media (max-width: 31.25em) {
-    .form__radio-label {
-      font-size: 1.2rem; } }
 
 .form__radio-button {
   width: 3rem;
@@ -962,11 +897,6 @@ body {
   top: -.5rem;
   left: 0;
   transition: all .3s; }
-  @media (max-width: 31.25em) {
-    .form__radio-button {
-      width: 3.5rem;
-      height: 3.5rem;
-      border-radius: 50%; } }
   .form__radio-button::after {
     content: "";
     display: block;

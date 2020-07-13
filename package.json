@@ -1,15 +1,19 @@
 {
-  "name": "narrous",
+  "name": "natours",
   "version": "1.0.0",
-  "description": "landing page",
+  "description": "landing page for natours",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass Sass/main.scss css/style.css -w"
+    "watch:compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "compiling:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/icons.css css/style.comp.css"
   },
-  "author": "",
+  "author": "Rubab",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.12.0"
- 
- }
+    "autoprefixer": "^9.8.4",
+    "concat": "^1.0.3",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^7.1.1"
+  }
 }
